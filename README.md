@@ -12,6 +12,8 @@ Unit testing was done through a module called unittest which is used in a sepera
 
 ## How to use
 There is a help button which briefly explains how to use the program in simple steps!
+![image](https://github.com/flashdash101/Knapsack-Solver/assets/97402685/7f267d0c-cd32-44c2-8981-0f86abf3527a)
+
 
 ## Images
 ![image](https://github.com/flashdash101/Knapsack-Solver/assets/97402685/421aeaf2-29e4-412c-8682-3f2fea6eb19e) ![image](https://github.com/flashdash101/Knapsack-Solver/assets/97402685/ee98f5f0-8380-4a29-ae3d-b5a42b448c0a)
