@@ -11,7 +11,7 @@ class TestKnapsack(unittest.TestCase):
         solution, objective = knapsack(len(values), values, weights, limit)
         self.assertEqual(solution, expected_solution[0])
         self.assertEqual(objective, expected_solution[1])
-
+        #Testing that the function returns the expected solution and the objective
         # Add more test cases for different scenarios
 
 if __name__ == '__main__':

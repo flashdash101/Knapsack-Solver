@@ -2,6 +2,11 @@ import tkinter as tk
 from tkinter import messagebox
 import random
 import matplotlib.pyplot as plt
+#importing the necessary packages
+
+
+
+
 def knapsack(n, values, weights, limit):
     # Create a 2D matrix to store the maximum value for each subproblem
     # K[i][w] represents the maximum value that can be obtained by choosing from the first i items 
@@ -56,16 +61,7 @@ def knapsack(n, values, weights, limit):
     return solution, K[n][limit]
 
 
-    
-# Example usage:
-# values = [60, 100, 120]
-# weights = [10, 20, 30]
-# limit = 50
 
-# print(f"Solution: {solution}")
-# print(f"Objective: {objective}")
-
-# Create the main window
 # Create the main window
 root = tk.Tk()
 root.geometry('500x270')
@@ -111,6 +107,10 @@ limit_label.place(x=15,y=160)
 
 limit_slider = tk.Scale(root, from_=0, to=25, orient=tk.HORIZONTAL)
 limit_slider.place(x=100,y=y)
+
+
+#Sliders for inputting values and weights
+#Lables to display values and weights text
 
 
 def solve():
