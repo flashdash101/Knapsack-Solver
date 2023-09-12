@@ -18,3 +18,4 @@ There is a help button which briefly explains how to use the program in simple s
 
 ## Future work
 * More ways to visualise the output, i have implemented a basic graph for now but it doesn't really do justice.
+* Maybe use different optimization algorithms.
