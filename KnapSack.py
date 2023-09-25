@@ -3,10 +3,11 @@ from tkinter import messagebox
 import random
 import matplotlib.pyplot as plt
 #importing the necessary packages
+#Feel free to include other packages!
 
 
 
-
+#Defining a function to calculate the maximum value of a knapsack problem
 def knapsack(n, values, weights, limit):
     # Create a 2D matrix to store the maximum value for each subproblem
     # K[i][w] represents the maximum value that can be obtained by choosing from the first i items 
@@ -112,15 +113,17 @@ limit_slider.place(x=100,y=y)
 #Sliders for inputting values and weights
 #Lables to display values and weights text
 
-
+#Define the solve function which will be called when the solve button is clicked
 def solve():
     # Get the current values of sliders and limit
     values = [value_slider1.get(), value_slider2.get(), value_slider3.get()]
     weights = [weight_slider1.get(), weight_slider2.get(), weight_slider3.get()]
     limit = limit_slider.get()
+    #If the limit is too low, display a warning message
     if limit <= 1:
         messagebox.showwarning('Limit', 'Limit is too low please increase')
     else:
+    #Else display the results in a messagebox
         n = len(values)
         solution, objective = knapsack(n, values, weights, limit)
         
@@ -132,7 +135,8 @@ def solve():
 solve_button = tk.Button(root, text="Solve", command=solve)
 solve_button.place(x= 250, y= 200)
 
-
+#Create a function to plot the values and weights
+#Which will be updated in the future.
 def plot_values_weights():
     # Get the current values and weights from the sliders
     values = [value_slider1.get(), value_slider2.get(), value_slider3.get()]
@@ -196,7 +200,7 @@ def show_help():
     
     messagebox.showinfo("Help", help_text)
 
-
+#Help menu item, which will display the usage instructions.
 help_menu.add_command(label="How to Use", command=show_help)
 
 
